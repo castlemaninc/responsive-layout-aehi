@@ -46,15 +46,16 @@
                 </ul>
                 
                 <!-- Dropdown Metals Structure -->
-                <ul id="dropdown-metals" class="dropdown-content">
-                    <li><a href="#!">One</a></li>
-                    <li><a href="#!">Two</a></li>                  
-                    <li><a href="#!">Three</a></li>
+                <ul id='dropdown2' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
                 </ul>
 
-                <!-- Dropdown 2 Structure -->
-                <ul id="dropdown2" class="dropdown-content">
-                    <li><a class='dropdown-metals' href='#' data-activates='dropdown-metals' data-hover="hover" data-alignment="left">Metals</a></li>                  
+                <!-- Dropdown 4 Structure -->
+                <ul id="dropdown4" class="dropdown-content">
+                    <li><a class='dropdown-button2 d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">Drop Me!</a></li>                 
                     <li><a href="#!">two</a></li>                    
                     <li><a href="#!">three</a></li>
                 </ul>
@@ -73,7 +74,7 @@
                 <!-- Dropdown Trigger 1-->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Our Company<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Dropdown Trigger 2-->
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown4">Products<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Dropdown Trigger 3-->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Services<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -133,12 +134,12 @@
             $(".dropdown-trigger").dropdown();
             $('.sidenav').sidenav();
 
-            $('.dropdown-metals').dropdown({
+            $('.dropdown-button2').dropdown({
                 inDuration: 300,
                 outDuration: 225,
                 constrain_width: false, // Does not change width of dropdown to that of the activator
                 hover: true, // Activate on hover
-                //gutter: ($('.dropdown-content').width()*3)/2.5 + 5, // Spacing from edge
+                gutter: ($('.dropdown-content').width()*3)/2.5 + 5, // Spacing from edge
                 belowOrigin: false, // Displays dropdown below the button
                 alignment: 'left' // Displays dropdown with edge aligned to the left of button
                 }
