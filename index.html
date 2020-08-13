@@ -15,12 +15,7 @@
     <!-- Custom Styles -->
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     
-    <style>
-        .dropdown-content {
-            overflow:visible !important;
-        }
-    </style>
-    
+        
     <title>AEHI, Inc. - Integrated Supplier of Aviation Materials</title>
 
     <!--Specifies the character encoding for the HTML document-->
@@ -44,20 +39,18 @@
                     <li><a href="our-company/management.html">Management</a></li>                    
                     <li><a href="our-company/quality.html">Quality</a></li>
                 </ul>
-                
-                <!-- Dropdown Metals Structure -->
-                <ul id='dropdown2' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">three</a></li>
-                </ul>
+                                
 
                 <!-- Dropdown 4 Structure -->
-                <ul id="dropdown4" class="dropdown-content">
-                    <li><a class='dropdown-button2 d' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left">Drop Me!</a></li>                 
-                    <li><a href="#!">two</a></li>                    
-                    <li><a href="#!">three</a></li>
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!">Metals</a></li>                      
+                    <li class="divider"></li>                 
+                    <li><a href="products/composites-and-chemicals.html">Composites & Chemicals</a></li>                    
+                    <li><a href="products/standard-hardware.html">Standard Hardware</a></li>
+                    <li><a href="products/metallurgical-material.html">Metallurgical Materia</a></li>
+                    <li><a href="products/honeycomb.html">Honeycomb</a></li>
+                    <li><a href="products/broaching.html">Broaching</a></li>
+                    <li><a href="products/cutting-tools-and-inserts.html">Cutting Tools & Inserts</a></li>
                 </ul>
 
                 <!-- Dropdown 3 Structure -->
@@ -74,7 +67,7 @@
                 <!-- Dropdown Trigger 1-->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Our Company<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Dropdown Trigger 2-->
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown4">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Products<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Dropdown Trigger 3-->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown3">Services<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -109,8 +102,8 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">AEHI, Inc.</h5>
-              <p class="grey-text text-lighten-4">( DBA Eagle-High International )</p>
+              <h6 class="white-text">AEHI, Inc.</h6>
+              <p class="grey-text text-lighten-4">DBA Eagle-High International</p>
             </div>
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Links</h5>
@@ -133,18 +126,6 @@
         $(document).ready(function(){
             $(".dropdown-trigger").dropdown();
             $('.sidenav').sidenav();
-
-            $('.dropdown-button2').dropdown(
-                {                
-                inDuration: 300,
-                outDuration: 225,
-                constrain_width: false, // Does not change width of dropdown to that of the activator
-                hover: true, // Activate on hover
-                gutter: ($('.dropdown-content').width()*3)/2.5 + 5, // Spacing from edge
-                belowOrigin: false, // Displays dropdown below the button
-                alignment: 'left' // Displays dropdown with edge aligned to the left of button
-                }                
-            ).console.log('hello');
         });
       </script>
   </body>
