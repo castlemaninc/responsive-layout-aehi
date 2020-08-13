@@ -1,3 +1,3 @@
 # responsive-layout-aehi
 
-[Preview on Github Pages] (http://castlemaninc.github.io/responsive-layout-aehi)
+[Preview on Github Pages] (https://castlemaninc.github.io/responsive-layout-aehi)
